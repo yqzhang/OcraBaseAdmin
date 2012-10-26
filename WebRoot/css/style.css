@@ -1,0 +1,90 @@
+body {
+  font-family: Verdana;
+  font-size: 8pt;
+}
+td {
+  font-family: Verdana;
+  font-size: 8pt;
+}
+
+a {
+  font-family: Verdana;
+  font-size: 8pt;
+  color: #0033ff;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: Verdana;
+  font-size: 8pt;
+  color: #0033ff;
+  text-decoration: underline;
+}
+
+input {font-family: Verdana; font-size: 8pt;}
+select {font-family: Verdana; font-size: 8pt;}
+
+.header {
+  font-weigth: bold;
+  font-size: 8pt;
+  color: #FFFFFF;
+  background-color: #e4e4e4;
+}
+
+th {
+  font-family: arial, helvetica, geneva, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #000000;
+  background-color: #e4e4e4
+}
+
+.section {
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #0066cc;
+}
+
+.sdt {
+  font-weight: bold;
+  color: #0066cc;
+  background-color: #c3c3c3;
+}
+
+.row1 {
+  color: #000000;
+  background-color: #FFFFFF;
+  font-size: 8pt;
+}
+
+.row2 {
+  color: #000000;
+  background-color: #e4e4e4;
+  font-size: 8pt;
+}
+
+.sql {
+  font-weight: bold;
+  font-style : italic;
+  color: #009900;
+}
+
+.comment {
+  font-weight: bold;
+  font-style : italic;
+  color: #0066cc;
+}
+
+.error {
+  font-weight: bold;
+  font-style : italic;
+  color: #cc0033;
+}
+
+.menuTable {
+  color: #000000;
+}

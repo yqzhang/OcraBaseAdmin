@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="loginForm" type="com.ocrabaseadmin.struts.form.LoginForm" />
+    <form-bean name="createTableForm" type="com.ocrabaseadmin.struts.form.CreateTableForm" />
+    <form-bean name="insertDataForm" type="com.ocrabaseadmin.struts.form.InsertDataForm" />
+    <form-bean name="editIndexForm" type="com.ocrabaseadmin.struts.form.EditIndexForm" />
+    <form-bean name="importDataForm" type="com.ocrabaseadmin.struts.form.ImportDataForm" />
+    <form-bean name="rowKeyCheckForm" type="com.ocrabaseadmin.struts.form.RowKeyCheckForm" />
+    <form-bean name="addColumnForm" type="com.ocrabaseadmin.struts.form.AddColumnForm" />
+    <form-bean name="testDataGenerationForm" type="com.ocrabaseadmin.struts.form.TestDataGenerationForm" />
+    <form-bean name="testBulkLoadForm" type="com.ocrabaseadmin.struts.form.TestBulkLoadForm" />
+    <form-bean name="testStatisticsQueryForm" type="com.ocrabaseadmin.struts.form.TestStatisticsQueryForm" />
+    <form-bean name="testBenchmarkForm" type="com.ocrabaseadmin.struts.form.TestBenchmarkForm" />
+    <form-bean name="testIndexImportForm" type="com.ocrabaseadmin.struts.form.TestIndexImportForm" />
+    <form-bean name="changePasswordForm" type="com.ocrabaseadmin.struts.form.ChangePasswordForm" />
+    <form-bean name="addUserForm" type="com.ocrabaseadmin.struts.form.AddUserForm" />
+    <form-bean name="queryDataForm" type="com.ocrabaseadmin.struts.form.QueryDataForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action path="/getTableList" type="com.ocrabaseadmin.struts.action.GetTableListAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/menu.jsp" />
+    </action>
+    <action path="/getConfiguration" type="com.ocrabaseadmin.struts.action.GetConfigurationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/home.jsp" />
+    </action>
+    <action
+      attribute="loginForm"
+      input="/login.jsp"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.LoginAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/index.jsp" />
+    </action>
+    <action path="/viewTableList" type="com.ocrabaseadmin.struts.action.ViewTableListAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/viewTableList.jsp" />
+    </action>
+    <action path="/viewTableDetail" type="com.ocrabaseadmin.struts.action.ViewTableDetailAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="notActive" path="/viewTableList.do" />
+      <forward name="viewDescriptor" path="/viewDescriptor.jsp" />
+      <forward name="browseTable" path="/browseTable.jsp" />
+      <forward name="insertData" path="/insertData.jsp" />
+      <forward name="importData" path="/importData.jsp" />
+      <forward name="queryData" path="/queryData.jsp" />
+      <forward name="emptyTable" path="/emptyTable.jsp" />
+      <forward name="dropTable" path="/taskMonitor.do" />
+    </action>
+    <action path="/logout" type="com.ocrabaseadmin.struts.action.LogoutAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/logout.jsp" />
+    </action>
+    <action
+      attribute="createTableForm"
+      input="/createTable.jsp"
+      name="createTableForm"
+      path="/createTable"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.CreateTableAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/createTableSuccessfully.jsp" />
+      <forward name="fail" path="/createTable.jsp" />
+    </action>
+    <action
+      attribute="insertDataForm"
+      input="/insertData.jsp"
+      name="insertDataForm"
+      path="/insertData"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.InsertDataAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="fail" path="/insertData.jsp" />
+      <forward name="success" path="/insertData.jsp" />
+    </action>
+    <action path="/deleteData" type="com.ocrabaseadmin.struts.action.DeleteDataAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="editIndexForm"
+      input="/viewDescriptor.jsp"
+      name="editIndexForm"
+      path="/editIndex"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.EditIndexAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/taskMonitor.do" />
+    </action>
+    <action
+      attribute="importDataForm"
+      input="/importData.jsp"
+      name="importDataForm"
+      path="/importData"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.ImportDataAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/taskMonitor.do" />
+    </action>
+    <action
+      attribute="rowKeyCheckForm"
+      input="/importData.jsp"
+      name="rowKeyCheckForm"
+      path="/rowKeyCheck"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.RowKeyCheckAction">
+      <set-property property="cancellable" value="true" />
+      	<forward name="success" path="/rowKeyCheckResult.jsp"></forward>
+    </action>
+    <action path="/taskMonitor" type="com.ocrabaseadmin.struts.action.TaskMonitorAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/taskMonitor.jsp" />
+    </action>
+    <action
+      attribute="addColumnForm"
+      input="/viewDescriptor.jsp"
+      name="addColumnForm"
+      path="/addColumn"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.AddColumnAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action path="/deleteFamily" type="com.ocrabaseadmin.struts.action.DeleteFamilyAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action path="/deleteIndex" type="com.ocrabaseadmin.struts.action.DeleteIndexAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/taskMonitor.do" />
+    </action>
+    <action
+      attribute="testDataGenerationForm"
+      input="/performanceTest.jsp"
+      name="testDataGenerationForm"
+      path="/testDataGeneration"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.TestDataGenerationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/testDataGenerationProgress.jsp" />
+    </action>
+    <action
+      attribute="testBulkLoadForm"
+      input="/performanceTest.jsp"
+      name="testBulkLoadForm"
+      path="/testBulkLoad"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.TestBulkLoadAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/testBulkLoadProgress.jsp" />
+    </action>
+    <action
+      attribute="testStatisticsQueryForm"
+      input="/performanceTest.jsp"
+      name="testStatisticsQueryForm"
+      path="/testStatisticsQuery"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.TestStatisticsQueryAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="query" path="/testQueryResult.jsp" />
+      <forward name="statistics" path="/testStatisticsProcess.jsp" />
+    </action>
+    <action
+      attribute="testBenchmarkForm"
+      input="/performanceTest.jsp"
+      name="testBenchmarkForm"
+      path="/testBenchmark"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.TestBenchmarkAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/testBenchmarkProgress.jsp" />
+    </action>
+    <action path="/getTestStatisticsProgress" type="com.ocrabaseadmin.struts.action.GetTestStatisticsProgressAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="result" path="/testStatisticsResult.jsp" />
+    </action>
+    <action path="/getTestDataGenerationProgress" type="com.ocrabaseadmin.struts.action.GetTestDataGenerationProgressAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action path="/getTestBulkLoadProgress" type="com.ocrabaseadmin.struts.action.GetTestBulkLoadProgressAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action path="/getTaskProgress" type="com.ocrabaseadmin.struts.action.GetTaskProgressAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action path="/getQueryResult" type="com.ocrabaseadmin.struts.action.GetQueryResultAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/testQueryResult.jsp"></forward>
+    </action>
+    <action
+      attribute="testIndexImportForm"
+      input="/performanceTest.jsp"
+      name="testIndexImportForm"
+      path="/testIndexImport"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.TestIndexImportAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/testIndexImportProgress.jsp" />
+    </action>
+    <action path="/getTestIndexImportProgress" type="com.ocrabaseadmin.struts.action.GetTestIndexImportProgressAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="changePasswordForm"
+      input="/userProfile.jsp"
+      name="changePasswordForm"
+      path="/changePassword"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.ChangePasswordAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action path="/getAuthorityInfo" type="com.ocrabaseadmin.struts.action.GetAuthorityInfoAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/authorityManagement.jsp" />
+    </action>
+    <action path="/changeAuthority" type="com.ocrabaseadmin.struts.action.ChangeAuthorityAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/getAuthorityInfo.do" />
+    </action>
+    <action path="/addGroupToUser" type="com.ocrabaseadmin.struts.action.AddGroupToUserAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/getUserManagementInfo.do?type=group" />
+    </action>
+    <action path="/deleteGroupFromUser" type="com.ocrabaseadmin.struts.action.DeleteGroupFromUserAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/getUserManagementInfo.do?type=group" />
+    </action>
+    <action
+      attribute="addUserForm"
+      input="/authorityManagement.jsp"
+      name="addUserForm"
+      path="/addUser"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.AddUserAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/getUserManagementInfo.do?type=user" redirect="true" />
+      <forward name="fail" path="/getUserManagementInfo.do?type=user" />
+    </action>
+    <action path="/deleteUser" type="com.ocrabaseadmin.struts.action.DeleteUserAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/getUserManagementInfo.do?type=user" />
+    </action>
+    <action path="/getUserManagementInfo" type="com.ocrabaseadmin.struts.action.GetUserManagementInfoAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/userManagement.jsp" />
+    </action>
+    <action
+      attribute="queryDataForm"
+      input="/queryData.jsp"
+      name="queryDataForm"
+      path="/queryData"
+      scope="request"
+      type="com.ocrabaseadmin.struts.action.QueryDataAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/queryDataResult.do?page=0" />
+    </action>
+    <action path="/queryDataResult" type="com.ocrabaseadmin.struts.action.QueryDataResultAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="success" path="/queryDataResult.jsp" />
+    </action>
+    <action path="/getTestBenchmarkProgress" type="com.ocrabaseadmin.struts.action.GetTestBenchmarkProgressAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+
+  </action-mappings>
+
+  <message-resources parameter="com.ocrabaseadmin.struts.ApplicationResources" />
+</struts-config>
+

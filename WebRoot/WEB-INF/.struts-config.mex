@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/getTableList.do" location="50,50" dimension="389,104" />
+  <StrutsActivity path="/getConfiguration.do" location="950,50" dimension="419,104" />
+  <StrutsActivity path="/login.do" location="350,250" dimension="344,104" />
+  <StrutsActivity path="/viewTableList.do" location="50,650" dimension="398,104" />
+  <StrutsActivity path="/viewTableDetail.do" location="50,850" dimension="414,104" />
+  <StrutsActivity path="/logout.do" location="950,1050" dimension="353,104" />
+  <StrutsActivity path="/createTable.do" location="350,1250" dimension="386,104" />
+  <StrutsActivity path="/insertData.do" location="1250,1250" dimension="377,104" />
+  <StrutsActivity path="/deleteData.do" location="350,1450" dimension="383,104" />
+  <StrutsActivity path="/editIndex.do" location="950,1450" dimension="370,104" />
+  <StrutsActivity path="/importData.do" location="350,1650" dimension="383,104" />
+  <StrutsActivity path="/rowKeyCheck.do" location="950,1650" dimension="400,104" />
+  <StrutsActivity path="/taskMonitor.do" location="1550,950" dimension="388,104" />
+  <StrutsActivity path="/addColumn.do" location="1550,1450" dimension="384,104" />
+  <StrutsActivity path="/deleteFamily.do" location="1550,1650" dimension="396,104" />
+  <StrutsActivity path="/deleteIndex.do" location="50,1850" dimension="388,104" />
+  <StrutsActivity path="/testDataGeneration.do" location="1250,1850" dimension="438,104" />
+  <StrutsActivity path="/testBulkLoad.do" location="350,2050" dimension="395,104" />
+  <StrutsActivity path="/testStatisticsQuery.do" location="950,2050" dimension="434,104" />
+  <StrutsActivity path="/testBenchmark.do" location="1550,2050" dimension="409,104" />
+  <StrutsActivity path="/getTestStatisticsProgress.do" location="1850,650" dimension="474,104" />
+  <StrutsActivity path="/getTestDataGenerationProgress.do" location="350,2250" dimension="517,104" />
+  <StrutsActivity path="/getTestBulkLoadProgress.do" location="1250,2250" dimension="474,104" />
+  <StrutsActivity path="/getTaskProgress.do" location="50,2450" dimension="417,104" />
+  <StrutsActivity path="/getQueryResult.do" location="1850,2450" dimension="411,104" />
+  <StrutsActivity path="/testIndexImport.do" location="50,2650" dimension="414,104" />
+  <StrutsActivity path="/getTestIndexImportProgress.do" location="2150,850" dimension="493,104" />
+  <StrutsActivity path="/changePassword.do" location="2150,1050" dimension="419,104" />
+  <StrutsActivity path="/getAuthorityInfo.do" location="2150,1450" dimension="417,104" />
+  <StrutsActivity path="/changeAuthority.do" location="2150,1850" dimension="418,104" />
+  <StrutsActivity path="/addGroupToUser.do" location="2150,2050" dimension="417,104" />
+  <StrutsActivity path="/deleteGroupFromUser.do" location="2150,2250" dimension="454,104" />
+  <StrutsActivity path="/addUser.do" location="950,2650" dimension="364,104" />
+  <StrutsActivity path="/deleteUser.do" location="1550,2650" dimension="382,104" />
+  <StrutsActivity path="/getUserManagementInfo.do" location="2150,2650" dimension="473,104" />
+  <StrutsActivity path="/queryData.do" location="650,2850" dimension="379,104" />
+  <StrutsActivity path="/queryDataResult.do" location="1850,450" dimension="419,104" />
+  <StrutsActivity path="/getTestBenchmarkProgress.do" location="2450,1250" dimension="511,108" />
+  <StrutsActivity path="/menu.jsp" location="650,50" dimension="99,53" />
+  <StrutsActivity path="/home.jsp" location="50,250" dimension="99,53" />
+  <StrutsActivity path="/index.jsp" location="650,450" dimension="98,53" />
+  <StrutsActivity path="/login.jsp" location="350,450" dimension="94,53" />
+  <StrutsActivity path="/viewTableList.jsp" location="950,650" dimension="150,53" />
+  <StrutsActivity path="/emptyTable.jsp" location="1250,850" dimension="138,53" />
+  <StrutsActivity path="/viewDescriptor.jsp" location="950,850" dimension="159,53" />
+  <StrutsActivity path="/importData.jsp" location="50,1050" dimension="136,53" />
+  <StrutsActivity path="/browseTable.jsp" location="350,1050" dimension="143,53" />
+  <StrutsActivity path="/queryData.jsp" location="350,2850" dimension="130,53" />
+  <StrutsActivity path="/insertData.jsp" location="650,1050" dimension="130,53" />
+  <StrutsActivity path="/logout.jsp" location="50,1250" dimension="103,53" />
+  <StrutsActivity path="/createTable.jsp" location="50,1450" dimension="137,53" />
+  <StrutsActivity path="/createTableSuccessfully.jsp" location="1250,650" dimension="216,53" />
+  <StrutsActivity path="/rowKeyCheckResult.jsp" location="1550,750" dimension="190,53" />
+  <StrutsActivity path="/taskMonitor.jsp" location="1850,2250" dimension="139,53" />
+  <StrutsActivity path="/testDataGenerationProgress.jsp" location="650,2450" dimension="246,53" />
+  <StrutsActivity path="/performanceTest.jsp" location="50,2050" dimension="171,53" />
+  <StrutsActivity path="/testBulkLoadProgress.jsp" location="1250,2450" dimension="203,53" />
+  <StrutsActivity path="/testQueryResult.jsp" location="950,2450" dimension="166,53" />
+  <StrutsActivity path="/testStatisticsProgress.jsp" location="1550,2450" dimension="203,53" />
+  <StrutsActivity path="/testBenchmarkProgress.jsp" location="1550,2850" dimension="229,54" />
+  <StrutsActivity path="/testStatisticsResult.jsp" location="1850,1150" dimension="187,53" />
+  <StrutsActivity path="/testIndexImportProgress.jsp" location="650,2650" dimension="222,53" />
+  <StrutsActivity path="/userProfile.jsp" location="2150,1250" dimension="131,53" />
+  <StrutsActivity path="/authorityManagement.jsp" location="2150,1650" dimension="207,53" />
+  <StrutsActivity path="/userManagement.jsp" location="50,2850" dimension="176,53" />
+  <StrutsActivity path="/queryDataResult.jsp" location="1250,2850" dimension="170,53" />
+  <StrutsActivity path="/dropTable.jsp" location="1250,250" dimension="125,53" />
+  <StrutsActivity path="/testDataGenerationProcess.jsp" location="1850,1850" dimension="240,53" />
+  <StrutsActivity path="/testBulkLoadProcess.jsp" location="950,2250" dimension="197,53" />
+  <StrutsActivity path="/testStatisticsProcess.jsp" location="50,2250" dimension="197,53" />
+  <StrutsActivity path="/editIndex.jsp" location="50,1650" dimension="123,53" />
+  <StrutsActivity path="/viewTableDescriptor.jsp" location="950,1250" dimension="193,53" />
+  <StrutsActivity path="viewTableList.jsp" location="650,650" dimension="146,53" />
+  <StrutsActivity path="/tableList.jsp" location="950,450" dimension="118,53" />
+  <StrutsActivity path="login.jsp" location="950,250" dimension="90,53" />
+  <StrutsActivity path="index.jsp" location="50,450" dimension="94,53" />
+  <StrutsActivity path="/viewTableDetail.jsp" location="650,850" dimension="166,53" />
+  <StrutsActivity path="/createTableSuccessfully" location="1250,450" dimension="195,53" />
+  <StrutsActivity path="" location="1550,550" dimension="35,53" />
+  <StrutsActivity path="/home" location="650,1850" dimension="76,53" />
+  <StrutsActivity path="/" location="950,1850" dimension="39,53" />
+  <StrutsTransition id="/importData.jsp,null,/importData.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="186,1076" />
+      <AbsolutePoint location="317,1076" />
+      <AbsolutePoint location="317,1688" />
+      <AbsolutePoint location="350,1688" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/performanceTest.jsp,null,/testIndexImport.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,2076" />
+      <AbsolutePoint location="-85,2076" />
+      <AbsolutePoint location="-85,2702" />
+      <AbsolutePoint location="50,2702" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableDetail.do,emptyTable,/emptyTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="464,918" />
+      <AbsolutePoint location="1319,918" />
+      <AbsolutePoint location="1319,903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteUser.do,success,/getUserManagementInfo.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1932,2702" />
+      <AbsolutePoint location="2150,2702" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,success,/logout.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,1118" />
+      <AbsolutePoint location="101,1118" />
+      <AbsolutePoint location="101,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testStatisticsQuery.do,statistics,/testStatisticsProcess.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1167,2102" />
+      <AbsolutePoint location="148,2276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testStatisticsQuery.do,query,/testQueryResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1162,2154" />
+      <AbsolutePoint location="1162,2476" />
+      <AbsolutePoint location="1116,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/performanceTest.jsp,null,/testDataGeneration.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="135,2050" />
+      <AbsolutePoint location="135,1999" />
+      <AbsolutePoint location="1469,1999" />
+      <AbsolutePoint location="1469,1954" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/performanceTest.jsp,null,/testBenchmark.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,2050" />
+      <AbsolutePoint location="165,2029" />
+      <AbsolutePoint location="1754,2029" />
+      <AbsolutePoint location="1754,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/performanceTest.jsp,null,/testStatisticsQuery.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="135,2103" />
+      <AbsolutePoint location="135,2169" />
+      <AbsolutePoint location="1192,2169" />
+      <AbsolutePoint location="1192,2154" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addUser.do,fail,/getUserManagementInfo.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1132,2754" />
+      <AbsolutePoint location="1132,2799" />
+      <AbsolutePoint location="2386,2799" />
+      <AbsolutePoint location="2386,2754" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testStatisticsQuery.do,statistics,/testStatisticsProgress.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1222,2154" />
+      <AbsolutePoint location="1222,2399" />
+      <AbsolutePoint location="1651,2399" />
+      <AbsolutePoint location="1651,2450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addUser.do,success,/getUserManagementInfo.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1033,2650" />
+      <AbsolutePoint location="1033,2599" />
+      <AbsolutePoint location="2386,2599" />
+      <AbsolutePoint location="2386,2650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/insertData.do,success,/insertData.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1319,1250" />
+      <AbsolutePoint location="1319,1218" />
+      <AbsolutePoint location="685,1218" />
+      <AbsolutePoint location="685,1103" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/createTable.do,fail,/createTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,1318" />
+      <AbsolutePoint location="118,1318" />
+      <AbsolutePoint location="118,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getAuthorityInfo.do,success,/authorityManagement.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2253,1554" />
+      <AbsolutePoint location="2253,1650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addGroupToUser.do,success,/getUserManagementInfo.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2567,2102" />
+      <AbsolutePoint location="2619,2102" />
+      <AbsolutePoint location="2619,2650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,success,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="679,354" />
+      <AbsolutePoint location="679,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/insertData.do,fail,/insertData.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1408,1250" />
+      <AbsolutePoint location="1408,1169" />
+      <AbsolutePoint location="715,1169" />
+      <AbsolutePoint location="715,1103" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableDetail.do,viewDescriptor,/viewDescriptor.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="287,850" />
+      <AbsolutePoint location="287,769" />
+      <AbsolutePoint location="1025,769" />
+      <AbsolutePoint location="1025,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/taskMonitor.do,success,/taskMonitor.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1938,1002" />
+      <AbsolutePoint location="2105,1002" />
+      <AbsolutePoint location="2105,2276" />
+      <AbsolutePoint location="1989,2276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/createTable.jsp,null,/createTable.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="168,1450" />
+      <AbsolutePoint location="168,1288" />
+      <AbsolutePoint location="350,1288" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/rowKeyCheck.do,success,/rowKeyCheckResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,1702" />
+      <AbsolutePoint location="882,1702" />
+      <AbsolutePoint location="882,-25" />
+      <AbsolutePoint location="1645,-25" />
+      <AbsolutePoint location="1645,750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/performanceTest.jsp,null,/testBulkLoad.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="221,2076" />
+      <AbsolutePoint location="350,2076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/insertData.jsp,null,/insertData.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="760,1103" />
+      <AbsolutePoint location="760,1318" />
+      <AbsolutePoint location="1250,1318" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getConfiguration.do,success,/home.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1159,154" />
+      <AbsolutePoint location="1159,199" />
+      <AbsolutePoint location="99,199" />
+      <AbsolutePoint location="99,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewDescriptor.jsp,null,/addColumn.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1029,903" />
+      <AbsolutePoint location="1029,969" />
+      <AbsolutePoint location="795,969" />
+      <AbsolutePoint location="795,1429" />
+      <AbsolutePoint location="1744,1429" />
+      <AbsolutePoint location="1744,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getQueryResult.do,success,/testQueryResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,2518" />
+      <AbsolutePoint location="1033,2518" />
+      <AbsolutePoint location="1033,2503" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/queryData.do,success,/queryDataResult.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,2918" />
+      <AbsolutePoint location="35,2918" />
+      <AbsolutePoint location="35,518" />
+      <AbsolutePoint location="1850,518" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getTestStatisticsProgress.do,result,/testStatisticsResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1953,754" />
+      <AbsolutePoint location="1953,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userProfile.jsp,null,/changePassword.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2215,1250" />
+      <AbsolutePoint location="2215,1154" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testBulkLoad.do,success,/testBulkLoadProgress.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="547,2154" />
+      <AbsolutePoint location="547,2199" />
+      <AbsolutePoint location="1192,2199" />
+      <AbsolutePoint location="1192,2476" />
+      <AbsolutePoint location="1250,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/queryData.jsp,null,/queryData.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="480,2876" />
+      <AbsolutePoint location="650,2876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableDetail.do,queryData,/queryData.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,902" />
+      <AbsolutePoint location="-25,902" />
+      <AbsolutePoint location="-25,3029" />
+      <AbsolutePoint location="415,3029" />
+      <AbsolutePoint location="415,2903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteIndex.do,success,/taskMonitor.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="257,1850" />
+      <AbsolutePoint location="257,1369" />
+      <AbsolutePoint location="1744,1369" />
+      <AbsolutePoint location="1744,1054" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/createTable.do,success,/createTableSuccessfully.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="538,1250" />
+      <AbsolutePoint location="538,818" />
+      <AbsolutePoint location="1358,818" />
+      <AbsolutePoint location="1358,703" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableDetail.do,browseTable,/browseTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="421,954" />
+      <AbsolutePoint location="421,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/queryDataResult.do,success,/queryDataResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2269,502" />
+      <AbsolutePoint location="3036,502" />
+      <AbsolutePoint location="3036,3119" />
+      <AbsolutePoint location="1335,3119" />
+      <AbsolutePoint location="1335,2903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/authorityManagement.jsp,null,/addUser.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2357,1676" />
+      <AbsolutePoint location="2718,1676" />
+      <AbsolutePoint location="2718,2629" />
+      <AbsolutePoint location="1132,2629" />
+      <AbsolutePoint location="1132,2650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableDetail.do,importData,/importData.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="118,954" />
+      <AbsolutePoint location="118,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changeAuthority.do,success,/getAuthorityInfo.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2372,1850" />
+      <AbsolutePoint location="2372,1554" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getTableList.do,success,/menu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="439,76" />
+      <AbsolutePoint location="650,76" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableDetail.do,insertData,/insertData.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="464,888" />
+      <AbsolutePoint location="568,888" />
+      <AbsolutePoint location="568,1076" />
+      <AbsolutePoint location="650,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testBenchmark.do,success,/testBenchmarkProgress.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1754,2102" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testIndexImport.do,success,/testIndexImportProgress.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="464,2676" />
+      <AbsolutePoint location="650,2676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getUserManagementInfo.do,success,/userManagement.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2416,2754" />
+      <AbsolutePoint location="2416,2969" />
+      <AbsolutePoint location="138,2969" />
+      <AbsolutePoint location="138,2903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableDetail.do,dropTable,/taskMonitor.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="257,954" />
+      <AbsolutePoint location="257,1002" />
+      <AbsolutePoint location="1550,1002" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteGroupFromUser.do,success,/getUserManagementInfo.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2416,2354" />
+      <AbsolutePoint location="2416,2650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewDescriptor.jsp,null,/editIndex.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,876" />
+      <AbsolutePoint location="911,876" />
+      <AbsolutePoint location="911,1502" />
+      <AbsolutePoint location="950,1502" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editIndex.do,success,/taskMonitor.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1128,1450" />
+      <AbsolutePoint location="1128,1399" />
+      <AbsolutePoint location="1774,1399" />
+      <AbsolutePoint location="1774,1054" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/importData.do,success,/taskMonitor.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="733,1702" />
+      <AbsolutePoint location="831,1702" />
+      <AbsolutePoint location="831,1032" />
+      <AbsolutePoint location="1550,1032" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/importData.jsp,null,/rowKeyCheck.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1076" />
+      <AbsolutePoint location="5,1076" />
+      <AbsolutePoint location="5,1599" />
+      <AbsolutePoint location="1150,1599" />
+      <AbsolutePoint location="1150,1650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testDataGeneration.do,success,/testDataGenerationProgress.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1918" />
+      <AbsolutePoint location="911,1918" />
+      <AbsolutePoint location="911,2476" />
+      <AbsolutePoint location="896,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="397,450" />
+      <AbsolutePoint location="397,354" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableList.do,success,/viewTableList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="448,718" />
+      <AbsolutePoint location="1025,718" />
+      <AbsolutePoint location="1025,703" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewTableDetail.do,notActive,/viewTableList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="257,850" />
+      <AbsolutePoint location="257,754" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
